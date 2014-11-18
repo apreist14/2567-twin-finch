@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*, *:before, *:after{
+  	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+
+.wrapper{
+ 	 max-width:900px;
+ 	 margin: 0 auto;
+}
+
+.grid{
+  	background-color:pink;
+  	clear: both;
+}
+
+.nested{
+ 	 background-color: aqua;
+}
+
+img {
+	width:100%;
+} 
+
+.grid:after{
+  /*this is making grid expand to contain floated columns*/
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*='column-']{
+   /*this is used to select all the divs with colum- in it*/
+  float: left;
+  padding-right: 50px;
+  border: 1px solid black;
+  margin-bottom: 20px; /*add space at the bottom of grid, margin adds above box*/
+}
+
+.grid .grid [class*='column-']{
+  padding: 0 25px;
+}
+
+.grid .grid{
+  margin: 0 -25px 25px;
+}
+
+[class*='column-']:last-of-type{
+  padding-right: 0px;
+}
+
+.column-1-12{
+  width: 8.33%;
+}
+
+.column-2-12{
+  width: 16.66%;
+}
+
+.column-3-12{
+  width: 25%;
+}
+
+.column-4-12{
+  width: 33.33%;
+}
+
+.column-5-12{
+  width: 41.66%;
+}
+
+.column-6-12{
+  width: 50%;
+}
+
+.column-7-12{
+  width: 58.33%;
+}
+
+.column-8-12{
+  width: 66.66%;
+}
+
+.column-9-12{
+  width: 75%;
+}
+
+.column-10-12{
+  	width: 83.33%;
+}
+
+.column-11-12{
+  	width: 91.66%;
+}
+
+.column-12-12{
+  	width: 100%;
+}
+
+.clearfix{
+	clear: both;
+}
+
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+.centered{
+	float: none;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 700px){ /*once it gets down this low it will change everything*/
+  [class*='column-']{
+    	width: 100%;
+  }
+  
+  .wrapper{
+    	max-width: 500px;
+    	padding: 0 auto;
+  }
+  
+  .column-mobile{
+	    /* specifies certain boxes to make 50 percent */
+		width: 50%;
+	}
