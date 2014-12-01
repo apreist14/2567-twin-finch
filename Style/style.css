@@ -36,7 +36,7 @@ img {
    /*this is used to select all the divs with colum- in it*/
   float: left;
   padding-right: 50px;
-  border: 1px solid black;
+  border: 0px solid black;
   margin-bottom: 20px; /*add space at the bottom of grid, margin adds above box*/
 }
 
@@ -67,7 +67,7 @@ header{
 /*home background image*/
 .hero-home{
 	width:100%;
-  	height: 400px; 
+  	height: 340px; 
 	background:url("http://placehold.it/1200x600") no-repeat;
 	background-size:100%;
   	background-position:center;
@@ -80,8 +80,8 @@ header{
 /*product background image*/
 .hero-product{
 	width:100%;
-  	height: 400px; 
-	background:url("http://placehold.it/1200x2800") no-repeat;
+  	height: 930px; 
+	background:url("http://placehold.it/") no-repeat;
 	background-size:100%;
   	background-position:center;
 }
@@ -94,7 +94,7 @@ header{
 .hero-about{
 	width:100%;
   	height: 400px; 
-	background:url("http://placehold.it/1200x2800") no-repeat;
+	background:url("http://placehold.it/1200x600") no-repeat;
 	background-size:100%;
   	background-position:center;
 }
@@ -107,7 +107,7 @@ header{
 .hero-follow-us{
 	width:100%;
   	height: 400px; 
-	background:url("http://placehold.it/1200x2800") no-repeat;
+	background:url("http://placehold.it/") no-repeat;
 	background-size:100%;
   	background-position:center;
 }
@@ -116,11 +116,11 @@ header{
   width:auto;
 }
 
-/*product background image*/
+/*connect with us background image*/
 .hero-connect{
 	width:100%;
   	height: 400px; 
-	background:url("http://placehold.it/1200x2800") no-repeat;
+	background:url("http://placehold.it/1200x4000") no-repeat;
 	background-size:100%;
   	background-position:center;
 }
@@ -142,6 +142,9 @@ header{
   width:auto;
 }
 
+p{
+	padding-left: 5px;
+}
 
 [class*='column-']:last-of-type{
   padding-right: 0px;
@@ -212,6 +215,10 @@ header{
 	margin: 0 auto;
 }
 
+.add-cart {
+	margin-right:30px;	
+}
+
 @media only screen and (max-width: 700px){ /*once it gets down this low it will change everything*/
   [class*='column-']{
     	width: 100%;
@@ -219,7 +226,7 @@ header{
   
   .wrapper{
     	max-width: 500px;
-    	padding: 0 auto;
+    	margin: 0 auto;
   }
   
   .column-mobile{
