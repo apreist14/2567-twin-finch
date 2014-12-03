@@ -67,7 +67,7 @@ header{
 /*home background image*/
 .hero-home{
 	width:100%;
-  	height: 340px; 
+  	height: 640px; 
 	background:url("http://placehold.it/1200x600") no-repeat;
 	background-size:100%;
   	background-position:center;
@@ -80,7 +80,7 @@ header{
 /*product background image*/
 .hero-product{
 	width:100%;
-  	height: 930px; 
+  	height: 1200px; 
 	background:url("http://placehold.it/") no-repeat;
 	background-size:100%;
   	background-position:center;
@@ -90,10 +90,14 @@ header{
   width:auto;
 }
 
+#product{
+	margin-top: -80px;
+}
+
 /*about background image*/
 .hero-about{
 	width:100%;
-  	height: 400px; 
+  	height: 550px; 
 	background:url("http://placehold.it/1200x600") no-repeat;
 	background-size:100%;
   	background-position:center;
@@ -106,7 +110,7 @@ header{
 /*follow-us background image*/
 .hero-follow-us{
 	width:100%;
-  	height: 400px; 
+  	height: 600px; 
 	background:url("http://placehold.it/") no-repeat;
 	background-size:100%;
   	background-position:center;
@@ -116,10 +120,14 @@ header{
   width:auto;
 }
 
+#follow-us img{
+	margin-right: 10px;
+}
+
 /*connect with us background image*/
 .hero-connect{
 	width:100%;
-  	height: 400px; 
+  	height: 570px; 
 	background:url("http://placehold.it/1200x4000") no-repeat;
 	background-size:100%;
   	background-position:center;
@@ -198,6 +206,18 @@ p{
   	width: 100%;
 }
 
+.offset-2-12 {
+  margin-left: 16.66%;
+}
+
+.top-spacing{
+	margin-top: 40px;
+}
+
+.photo-spacing{
+	margin-top: 100px;
+}
+
 .clearfix{
 	clear: both;
 }
@@ -216,7 +236,7 @@ p{
 }
 
 .add-cart {
-	margin-right:30px;	
+	margin-right:10px;	
 }
 
 @media only screen and (max-width: 700px){ /*once it gets down this low it will change everything*/
