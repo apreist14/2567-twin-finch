@@ -16,8 +16,10 @@
   	clear: both;
 }
 
-.nested{
- 	 background-color: aqua;
+body{
+	margin: 0;
+	background-image:url(../images/hero-pattern.jpg);
+	background-repeat:repeat;
 }
 
 img {
@@ -198,6 +200,7 @@ header{
 h1{
 	font-family: 'Oswald', sans-serif;
 	text-transform:uppercase;
+	
 }
 
 p{
@@ -313,7 +316,7 @@ p{
   
   .column-mobile{
 	    /* specifies certain boxes to make 50 percent */
-		width: 50%;
+		width: 100%;
 	}
 
 .mobile-hidden{
