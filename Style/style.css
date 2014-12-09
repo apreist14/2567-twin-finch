@@ -82,7 +82,7 @@ header{
 .hero-home{
 	width:100%;
   	height: 640px; 
-	background:url("http://placehold.it/1200x600") no-repeat;
+	background:url(../image/hero-home-coffee.jpg) no-repeat;
 	background-size:100%;
   	background-position:center;
 }
@@ -92,16 +92,15 @@ header{
 }
 
 #home img{
-	width:300px;
-	height:400px;
+	height:500px;
+	margin-top:-100px;
 }
 
 /*product background image*/
 .hero-product{
 	width:100%;
   	height: 1200px; 
-	background:url("http://placehold.it/") no-repeat;
-	background-size:100%;
+	background:url(../image/hero-pattern.jpg);
   	background-position:center;
 }
 
@@ -122,7 +121,7 @@ header{
 .hero-about{
 	width:100%;
   	height: 550px; 
-	background:url("http://placehold.it/1200x600") no-repeat;
+	background:url(../image/hero-about-beans.jpg) no-repeat;
 	background-size:100%;
   	background-position:center;
 }
@@ -137,7 +136,7 @@ header{
 .hero-follow-us{
 	width:100%;
   	height: 600px; 
-	background:url("http://placehold.it/") no-repeat;
+	background:url(../image/hero-pattern.jpg) no-repeat;
 	background-size:100%;
   	background-position:center;
 }
@@ -195,6 +194,11 @@ header{
 
 
 /*typeography*/
+
+h1{
+	font-family: 'Oswald', sans-serif;
+	text-transform:uppercase;
+}
 
 p{
 	padding-left: 5px;
