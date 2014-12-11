@@ -16,16 +16,6 @@
   	clear: both;
 }
 
-body{
-	margin: 0;
-	background-image:url(../images/hero-pattern.jpg);
-	background-repeat:repeat;
-}
-
-img {
-	width:100%;
-} 
-
 .grid:after{
   /*this is making grid expand to contain floated columns*/
   content: "";
@@ -49,7 +39,7 @@ section:after{
 }
 
 .grid .grid [class*='column-']{
-  padding: 0 25px;
+  padding: 0 10px;
 }
 
 
@@ -58,33 +48,105 @@ section:after{
 }
 
 /*navigation*/
+nav{
+	overflow:auto;
+	position:fixed;
+	background: #808A81;
+	width:100%;
+	margin: 0 auto;
+	padding-top:20px;
+	padding-bottom:20px;
+	z-index: 1;
+}
+
 nav li{
+	display: inline;
 	list-style:none;
-	display:inline;
-	padding:30px;
 	float:left;
+	display:inline;
+	padding-left:20px;
+	padding-right:70px;
+	margin: 0 auto;
+}
+
+nav ul{
+	margin: 0 auto;
 }
 
 nav a{
 	color: #241C11;
 	width:15%;
 	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+	text-transform:uppercase;
+	font-weight:200;
+	color:#241C11;
 }
 
 header{
 	overflow:auto;
-	background: #ffffff;
 	width:100%;
 	margin:0 auto;
 	max-width: 1170px;
 	z-index: 1;
 }
 
+/*typeography*/
+
+#home p{
+	font-family:'Oswald', sans-serif;
+	font-size:18px;
+	color:#f2eddb;
+	line-height:26px;
+	margin: -100px;
+}
+
+h1{
+	font-family: 'Oswald', sans-serif;
+	text-transform:uppercase;
+	font-size:40px;
+	font-weight:400;
+	color:#567365;
+	text-align:left;
+	
+}
+
+h3{
+	font-family: 'Oswald', sans-serif;
+	text-transform:uppercase;
+	font-size:20px;
+	color:#808A81;
+	font-weight:300;
+	
+}
+
+h4{
+	font-family: 'Oswald', sans-serif;
+	text-transform:uppercase;
+	
+}
+
+p{
+	padding-left: 5px;
+	font-family: 'Oswald light 300', sans-serif;
+}
+
+
+body{
+	margin: 0;
+	background-image:url(../image/hero-pattern.jpg);
+	background-repeat:repeat;
+}
+
+img {
+	width:100%;
+} 
+
 /*home background image*/
 .hero-home{
 	width:100%;
-  	height: 640px; 
-	background:url(../image/hero-home-coffee.jpg) no-repeat;
+  	height: 800px; 
+	background:url(../image/hero-home-bag.jpg) no-repeat;
 	background-size:100%;
   	background-position:center;
 }
@@ -94,8 +156,16 @@ header{
 }
 
 #home img{
-	height:500px;
-	margin-top:-100px;
+	height:900px;
+	margin: -150px;
+	margin-top: 250px;
+}
+
+#home p{
+	margin-top: 460px;
+	background-color: #567365;
+	padding: 20px;
+	line-height:35px;
 }
 
 /*product background image*/
@@ -115,21 +185,31 @@ header{
 }
 
 #product img{
-	width:250px;
+	width:150px;
 }
 
 
 /*about background image*/
 .hero-about{
-	width:100%;
+	width:1660px;
   	height: 550px; 
 	background:url(../image/hero-about-beans.jpg) no-repeat;
 	background-size:100%;
   	background-position:center;
+	margin: -75px;
 }
 
 .hero-about img {
   width:auto;
+}
+
+/*about*/
+#about p h3{
+	margin: -100px;
+}
+
+#about p{
+	color: #f2eddb;
 }
 
 
@@ -138,7 +218,6 @@ header{
 .hero-follow-us{
 	width:100%;
   	height: 600px; 
-	background:url(../image/hero-pattern.jpg) no-repeat;
 	background-size:100%;
   	background-position:center;
 }
@@ -157,7 +236,7 @@ header{
 .hero-connect{
 	width:100%;
   	height: 570px; 
-	background:url("http://placehold.it/1200x4000") no-repeat;
+	background:url(../image/hero-connect-bunch-of-beans.jpg) no-repeat;
 	background-size:100%;
   	background-position:center;
 }
@@ -203,8 +282,21 @@ h1{
 	
 }
 
+h2{
+	font-family: 'Oswald', sans-serif;
+	text-transform:uppercase;
+	
+}
+
+h3{
+	font-family: 'Oswald', sans-serif;
+	text-transform:uppercase;
+	
+}
+
 p{
 	padding-left: 5px;
+	font-family: 'Oswald light 300', sans-serif;
 }
 
 
@@ -311,15 +403,15 @@ p{
   
   .wrapper{
     	max-width: 500px;
-    	margin: 0 auto;
   }
   
   .column-mobile{
 	    /* specifies certain boxes to make 50 percent */
-		width: 100%;
+		width: 50%;
 	}
 
 .mobile-hidden{
 	display:none;
 }
+
 }
