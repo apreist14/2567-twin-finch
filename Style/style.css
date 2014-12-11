@@ -50,9 +50,8 @@ section:after{
 /*navigation*/
 nav{
 	overflow:auto;
-	position:fixed;
 	background: #808A81;
-	width:100%;
+	position:fixed;
 	margin: 0 auto;
 	padding-top:20px;
 	padding-bottom:20px;
@@ -80,7 +79,6 @@ nav a{
 	font-family: 'Oswald', sans-serif;
 	text-transform:uppercase;
 	font-weight:200;
-	color:#241C11;
 }
 
 header{
@@ -91,14 +89,32 @@ header{
 	z-index: 1;
 }
 
+body{
+	margin: 0;
+	background-image:url(../image/hero-pattern.jpg);
+	background-repeat:repeat;
+}
+
+
+
+
+
 /*typeography*/
 
 #home p{
 	font-family:'Oswald', sans-serif;
 	font-size:18px;
-	color:#f2eddb;
+	color:#241C11;
 	line-height:26px;
 	margin: -100px;
+}
+
+#product p{
+	font-family: 'Lato', sans-serif;
+	font-size:18px;
+	color:#241C11;
+	line-height:28px;
+	font-weight:300;
 }
 
 h1{
@@ -138,6 +154,9 @@ body{
 	background-repeat:repeat;
 }
 
+
+/*images*/
+
 img {
 	width:100%;
 } 
@@ -163,7 +182,7 @@ img {
 
 #home p{
 	margin-top: 460px;
-	background-color: #567365;
+	background-color: #808A81;
 	padding: 20px;
 	line-height:35px;
 }
@@ -171,7 +190,7 @@ img {
 /*product background image*/
 .hero-product{
 	width:100%;
-  	height: 1200px; 
+  	height: 1350px; 
 	background:url(../image/hero-pattern.jpg);
   	background-position:center;
 }
@@ -184,6 +203,22 @@ img {
 	margin-top: 50px;
 }
 
+#product input, #home select, #home input, select{
+	font-family: 'Oswald', sans-serif;
+	color:#241C11;
+	padding:5px;
+	border: solid 5px;
+	background:#808A81;
+	border-color:#808A81;
+	cursor: pointer;
+	outline-width: 0px;
+	outline: none;
+}
+
+#home input{
+	margin-right: 20px;
+}
+
 #product img{
 	width:150px;
 }
@@ -192,7 +227,7 @@ img {
 /*about background image*/
 .hero-about{
 	width:1660px;
-  	height: 550px; 
+  	height: 800px; 
 	background:url(../image/hero-about-beans.jpg) no-repeat;
 	background-size:100%;
   	background-position:center;
@@ -210,6 +245,23 @@ img {
 
 #about p{
 	color: #f2eddb;
+	line-height:26px;
+}
+
+.feature-review{
+	font-family:'Oswald', sans-serif;
+	font-size:18px;
+	color:#241C11;
+	line-height:26px;
+	background-color: #808A81;
+	padding: 20px;
+	line-height:35px;
+	margin: -75px;
+}
+
+#about h3{
+	color:#241C11;
+	padding-left:5px;
 }
 
 
