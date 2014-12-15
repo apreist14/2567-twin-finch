@@ -345,7 +345,7 @@ img {
 	width:100%;
 }
 
-#connect-with-us h3{
+#connect-with-us h1{
 	color:#F1EDC8;
 }
 
@@ -364,6 +364,10 @@ img {
 
 .hero-product img {
   width:auto;
+}
+
+footer img{
+	margin-top: 250px;
 }
 
 .media{
@@ -509,6 +513,7 @@ footer button:hover{
 @media only screen and (max-width: 700px){ /*once it gets down this low it will change everything*/
   [class*='column-']{
     	width: 100%;
+		margin: 10px;
   }
   
   .wrapper{
@@ -518,7 +523,7 @@ footer button:hover{
   
   .column-mobile{
 	    /* specifies certain boxes to make 50 percent */
-		width: 50%;
+		width: 100%;
 	}
 	
 	body img{
@@ -529,6 +534,13 @@ footer button:hover{
 		display:none;
 	}
 	
+	.hero-home, .hero-product, .hero-connect{
+		height:auto;
+	}
+	
+	.hero-about{
+		display:none;
+	}
 	
 	nav li{
 		font-size:12px;
@@ -537,30 +549,43 @@ footer button:hover{
 	
 	#home p{
 		font-size:16px;
-		line-height:18px;
-		padding-left:80px;
+		line-height:22px;
 		width:100%;
+		margin:0px;
+		margin-top:130px;
 	}
 	
 	#home img{
-		height:50px;
-		width:50px;
+		height:450px;
+		width:320px;
+		margin:0;
+		float:left;
+		margin-top:190px;
+	}
+
+	#product{
+		margin:0;
+	}
+	
+	#product img{
+		float:right;	
 	}
 	
 	h1{
-		font-size:16px;
-		padding:20px;
+		font-size:20px;
+		padding-top:10px;
 	}
 	
 	h3{
 		font-size:15px;
 		padding:20px;
+		padding-top: 10px;
 	}
 	
 	p{
-		font-size: 14px;
-		line-height:16px;
-		padding:20px;
+		font-size: 12px;
+		line-height:18px;
+		padding-right:20px;
 	}
 	
 	textarea, input{
@@ -570,5 +595,29 @@ footer button:hover{
 	.product input{
 		margin-top:20px;
 		margin-bottom:10px;
+	}
+	
+	#connect-with-us h1{
+		color:#808A81;
+		padding-right:20px;	
+	}
+	
+	#product input, #home select, #home input, select{
+	padding:5px;
+	border: solid 3px;
+	background:#808A81;
+	border-color:#808A81;
+	cursor: pointer;
+	outline-width: 0px;
+	outline: none;
+	width:50%;
+	}
+	
+	.hero-connect, .hero-about{
+		background:none;
+	}
+
+	footer img{
+		margin-top: 10px;
 	}
 }
