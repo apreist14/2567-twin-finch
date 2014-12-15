@@ -81,6 +81,10 @@ nav a{
 	font-weight:200;
 }
 
+nav a:hover{
+	color: #F1EDC8;
+}
+
 header{
 	overflow:auto;
 	width:100%;
@@ -96,26 +100,7 @@ body{
 }
 
 
-
-
-
 /*typeography*/
-
-#home p{
-	font-family:'Oswald', sans-serif;
-	font-size:18px;
-	color:#241C11;
-	line-height:26px;
-	margin: -100px;
-}
-
-#product p{
-	font-family: 'Lato', sans-serif;
-	font-size:18px;
-	color:#241C11;
-	line-height:28px;
-	font-weight:300;
-}
 
 h1{
 	font-family: 'Oswald', sans-serif;
@@ -146,7 +131,6 @@ p{
 	padding-left: 5px;
 	font-family: 'Oswald light 300', sans-serif;
 }
-
 
 body{
 	margin: 0;
@@ -181,11 +165,25 @@ img {
 }
 
 #home p{
+	font-family:'Oswald', sans-serif;
+	font-size:18px;
+	color:#F1EDC8;
+	line-height:26px;
+	margin: -100px;
 	margin-top: 460px;
 	background-color: #808A81;
 	padding: 20px;
 	line-height:35px;
 }
+
+#home input{
+	margin-right: 20px;
+}
+
+#home input:hover{
+	color:#F1EDC8;
+}
+
 
 /*product background image*/
 .hero-product{
@@ -199,8 +197,17 @@ img {
   width:auto;
 }
 
+/*product*/
 #product{
 	margin-top: 50px;
+}
+
+#product p{
+	font-family: 'Lato', sans-serif;
+	font-size:18px;
+	color:#241C11;
+	line-height:28px;
+	font-weight:300;
 }
 
 #product input, #home select, #home input, select{
@@ -215,8 +222,8 @@ img {
 	outline: none;
 }
 
-#home input{
-	margin-right: 20px;
+#product input:hover{
+	color:#F1EDC8;
 }
 
 #product img{
@@ -264,22 +271,42 @@ img {
 	padding-left:5px;
 }
 
+#about a {
+	font-family:'Oswald', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	color: #567365;
+	text-decoration: none;
+	padding-left: 10px;
+}
 
+#about a:hover {
+	color: #f2eddb;
+}
 
 /*follow-us background image*/
-
 
 #follow-us img{
 	margin-right: 10px;
 }
 
+/*follow-us*/
 #follow-us{
-	margin-top:-80px;
+	margin-top:-40px;
 }
 
 .follow-review h3{
 	color:#f2eddb;
 }
+
+#follow-us p{
+	font-family: 'Lato', sans-serif;
+	font-size:16px;
+	color:#241C11;
+	line-height:20px;
+	font-weight:300;
+}
+
 
 .follow-review{
 	font-family:'Oswald', sans-serif;
@@ -297,25 +324,39 @@ img {
 	float: left;
 }
 
+.social-icons:hover{
+	opacity:.7;
+}
+
 /*connect with us background image*/
 .hero-connect{
 	width:100%;
 	background:url(../image/hero-connect-bunch-of-beans.jpg) no-repeat;
 	background-size:100%;
-  	background-position:center;
 }
 
 .hero-connect img {
   width:auto;
 }
 
-#connect-with-us form{
+
+/*connect*/
+#connect-with-us textarea{
 	width:100%;
 }
 
-.map{
+#connect-with-us h3{
+	color:#F1EDC8;
+}
+
+#connect-with-us textarea{
+	width:100%;
+}
+
+.map img{
 	height:350px;
 	width:350px;
+	margin-top:540px;
 }
 
 /*footer background image*/
@@ -334,37 +375,49 @@ img {
 	padding:1em;
 }
 
-
-/*typeography*/
-
-h1{
+footer input {
 	font-family: 'Oswald', sans-serif;
 	text-transform:uppercase;
-	
+	font-weight:200;
+	border: solid 3px;
+	border-color: #808A81;
+	height: 30px;
+	background: #808A81;
+	width:100%;
+	padding-left: 10px;
 }
 
-h2{
+footer textarea{
 	font-family: 'Oswald', sans-serif;
 	text-transform:uppercase;
-	
+	font-weight:200;
+	border: solid 3px;
+	border-color: #808A81;
+	background: #808A81;
+	height:200px;
+	width:100%;
 }
 
-h3{
+footer button {
 	font-family: 'Oswald', sans-serif;
 	text-transform:uppercase;
-	
+	font-weight:200;
+	border: solid 3px;
+	border-color: #808A81;
+	height: 30px;
+	background: #808A81;
 }
 
-p{
-	padding-left: 5px;
-	font-family: 'Oswald light 300', sans-serif;
+footer button:hover{
+	color:#F1EDC8;
 }
 
-
-
-
-
-
+.copyright{
+	font-family: 'Oswald', sans-serif;
+	font-weight:200;
+	color: #567365;
+	font-size:12px;
+}
 /*columns for the grid*/
 [class*='column-']:last-of-type{
   padding-right: 0px;
@@ -459,7 +512,7 @@ p{
   }
   
   .wrapper{
-    	max-width: 500px;
+    	max-width: 100%;
 		margin: 0 auto;
   }
   
@@ -467,37 +520,55 @@ p{
 	    /* specifies certain boxes to make 50 percent */
 		width: 50%;
 	}
+	
+	body img{
+		max-width:500px;
+	}
 
-.mobile-hidden{
-	display:none;
-}
-
-nav{
-	display:inline;
-}
-
-h1{
-	font-size:16px;
-	padding:20px;
-}
-
-h3{
-	font-size:15px;
-	padding:20px;
-}
-
-p{
-	font-size: 14px;
-	line-height:16px;
-	padding:20px;
-}
-
-textarea{
-	width:100%;
-}
-
-.product input{
-	margin-top:20px;
-	margin-bottom:10px;
-}
+	.mobile-hidden{
+		display:none;
+	}
+	
+	
+	nav li{
+		font-size:12px;
+		display:inline;
+	}
+	
+	#home p{
+		font-size:16px;
+		line-height:18px;
+		padding-left:80px;
+		width:100%;
+	}
+	
+	#home img{
+		height:50px;
+		width:50px;
+	}
+	
+	h1{
+		font-size:16px;
+		padding:20px;
+	}
+	
+	h3{
+		font-size:15px;
+		padding:20px;
+	}
+	
+	p{
+		font-size: 14px;
+		line-height:16px;
+		padding:20px;
+	}
+	
+	textarea, input{
+		width:100%;
+	}
+	
+	.product input{
+		margin-top:20px;
+		margin-bottom:10px;
+	}
 }
